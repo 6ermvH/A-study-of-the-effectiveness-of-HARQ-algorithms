@@ -17,3 +17,9 @@ add_executable(bpsk_awgn_sim
 )
 
 target_link_libraries(bpsk_awgn_sim PRIVATE harq)
+
+add_executable(ber_bler_sim
+    ${CMAKE_CURRENT_LIST_DIR}/../tools/ber_bler_sim.cpp
+)
+
+target_link_libraries(ber_bler_sim PRIVATE harq)
