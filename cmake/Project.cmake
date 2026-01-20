@@ -17,3 +17,15 @@ add_executable(bpsk_passband_cloud
 )
 
 target_link_libraries(bpsk_passband_cloud PRIVATE harq)
+
+add_executable(bpsk_awgn_sim
+    ${CMAKE_CURRENT_LIST_DIR}/../tools/bpsk_awgn_sim.cpp
+)
+
+target_link_libraries(bpsk_awgn_sim PRIVATE harq)
+
+add_executable(ber_bler_sim
+    ${CMAKE_CURRENT_LIST_DIR}/../tools/ber_bler_sim.cpp
+)
+
+target_link_libraries(ber_bler_sim PRIVATE harq)
